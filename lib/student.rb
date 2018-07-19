@@ -51,6 +51,7 @@ class Student
     SELECT * FROM students WHERE grade = "10" LIMIT "?"
     SQL
     DB[:conn].execute(sql,number_students)
+  end
 
   def self.students_below_12th_grade
     sql = <<-SQL
